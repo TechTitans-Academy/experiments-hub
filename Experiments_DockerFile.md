@@ -44,7 +44,7 @@ CMD ["node", "server.js"]
 ```
 ---
 
-### 🧪 9. Alpine-based Bash Script Runner
+### 🧪 3. Alpine-based Bash Script Runner
 <b>Use Case:</b> Lightweight image to run shell scripts.
 
 ```
@@ -58,7 +58,7 @@ RUN chmod +x /app/script.sh
 CMD ["/app/script.sh"]
 ```
 ---
-### 🧪 9. Ubuntu web server with apache2
+### 🛠️ 4. Ubuntu web server with apache2
 <b>Use Case:</b> Ubuntu image with apache server running.
 ```
 # Getting the Operating System.
