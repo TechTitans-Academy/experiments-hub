@@ -1,0 +1,26 @@
+# Getting the Operating System.
+FROM ubuntu
+
+# Creating command
+RUN apt update
+
+# Setting work directory.
+WORKDIR /work
+
+#Copying file to containers.
+COPY index.html .
+
+#Adding file with ADD <URL> <path>
+
+#Setting up the user.
+RUN useradd techtitnas
+USER techtitnas
+
+#Setting the ENV varibale.
+ENV name=techtitans
+
+# Simple script.
+CMD echo "Running in environment: $name"
+
+# Letting the docker know please open port with expose.
+EXPOSE 8080
