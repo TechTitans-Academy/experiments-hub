@@ -1,0 +1,21 @@
+# Getting the Operating System.
+FROM ubuntu
+
+# Setting a work directory.
+WORKDIR /work
+
+#Copying the files.
+COPY script.sh .
+
+RUN chmod +x script.sh
+
+#Entrypoint
+ENTRYPOINT ["./script.sh"]
+CMD ["Techtitans"]
+
+
+Script Content:
+++
+#!/bin/bash
+echo "Hello, $1"
+++
