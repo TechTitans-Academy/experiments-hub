@@ -57,3 +57,19 @@ RUN chmod +x /app/script.sh
 
 CMD ["/app/script.sh"]
 ```
+---
+### 🧪 9. Ubuntu web server with apache2
+<b>Use Case:</b> Ubuntu image with apache server running.
+```
+# Getting the Operating System.
+FROM ubuntu
+
+# Installing the HTTP package.
+RUN apt update && apt install apache2 -y
+
+# Create index.html file.
+RUN echo "Hello From Docker Container" > /var/www/html/index.html
+
+# Starting the HTTP service.
+CMD ["apachectl", "-D", "FOREGROUND"]
+```
