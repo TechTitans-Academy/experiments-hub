@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote for Animals</title>
+</head>
+<body>
+    <h1>Vote for Your Favorite Animal</h1>
+    <ul>
+        {% for animal in animals %}
+        <li>
+            <form method="POST" action="{{ url_for('vote', animal=animal) }}">
+                <button type="submit">{{ loop.index }}. {{ animal.capitalize() }}</button>
+                - Votes: {{ votes[animal] }}
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
