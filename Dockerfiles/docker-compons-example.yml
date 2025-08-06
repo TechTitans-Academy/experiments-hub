@@ -2,9 +2,6 @@ version: "3.8"  # Define the Compose file version
 
 services:
   web:
-    build:
-      context: ./web  # Use Dockerfile in ./web directory
-      dockerfile: Dockerfile
     image: myapp_web:latest
     ports:
       - "8080:80"  # Host:Container (port binding)
