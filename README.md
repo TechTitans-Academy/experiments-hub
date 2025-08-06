@@ -9,7 +9,7 @@ This repository includes essential commands for working with various technologie
 📦 [Dockerfile Samples](https://github.com/TechTitans-Academy/experiments-hub/blob/main/Experiments_DockerFile.md)
 
 - [Docker nodejs Project](https://github.com/TechTitans-Academy/experiments-hub/blob/main/Dockerfiles/nodejs-app.md)
-- [Hosting Simple Apache-2 Web server](https://github.com/TechTitans-Academy/experiments-hub/blob/main/Dockerfiles/HostingWebsiteDockerfile)
+- [Hosting Simple Apache Web server Project](https://github.com/TechTitans-Academy/experiments-hub/blob/main/Dockerfiles/HostingWebsiteDockerfile)
 
 🧩 [Docker-Compose Project-1: Flask + Redis Counter!](https://github.com/TechTitans-Academy/experiments-hub/blob/main/Simple%20Flask%20%2B%20Redis%20Application-Docker-compose.md)
 
