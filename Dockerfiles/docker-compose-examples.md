@@ -78,7 +78,7 @@ services:
 
 ### 6. Creating a custom network for conatiner.
 
-`docker create network backend`
+`docker create network backend`<br>
 `docker run --name mydatabase1 --network backend mysql`
 
 ```
@@ -92,7 +92,6 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     networks:
       - backend
-
 networks:
   backend:
 ```
