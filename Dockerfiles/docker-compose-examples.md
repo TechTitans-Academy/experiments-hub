@@ -57,11 +57,11 @@ services:
       - akshay:/tmp
     command: sleep 2000
 volumes: 
-  akshay:
+  techtitans:
 
 ```
 
-### 2. Environment Varibale.
+### 5. Environment Varibale.
 `docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql`
 
 ```
@@ -74,3 +74,27 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
 ```
+
+
+### 6. Creating a custom network for conatiner.
+
+`docker create network backend`
+`docker run --name mydatabase1 --network backend mysql`
+
+```
+---
+version: v1
+services:
+  db:
+    image: mysql
+    container_name: mydatabase1
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - backend
+
+networks:
+  backend:
+```
+
+
