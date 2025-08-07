@@ -1,6 +1,6 @@
 ### Hosting website with Customized containers with docker-compose
 
-<b>`index.html` code:</b>
+#### <b>`index.html` code:</b>
 
 ```
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
 </html>
 ```
 
-<b>`Dockerfile` code:</b>
+#### <b>`Dockerfile` code:</b>
 
 ```
 # Using base image ubuntu.
