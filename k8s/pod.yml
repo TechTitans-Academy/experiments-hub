@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-22
+  namespace: prasad
+  labels:
+    name: techtitans
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
